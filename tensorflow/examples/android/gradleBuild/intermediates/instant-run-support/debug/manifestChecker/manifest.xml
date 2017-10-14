@@ -28,6 +28,7 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -37,8 +38,8 @@
         android:testOnly="true"
         android:theme="@style/MaterialTheme" >
         <activity
-            android:name="org.tensorflow.demo.DetectorActivity"
-            android:label="@string/activity_name_detection"
+            android:name="org.tensorflow.demo.ClassifierActivity"
+            android:label="@string/activity_name_classification"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,8 +48,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.tensorflow.demo.ClassifierActivity"
-            android:label="@string/activity_name_classification"
+            android:name="org.tensorflow.demo.DetectorActivity"
+            android:label="@string/activity_name_detection"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
