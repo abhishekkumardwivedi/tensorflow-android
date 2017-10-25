@@ -5,35 +5,27 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.0-beta6"
-    timestamp="1507740404761"
+    timestamp="1508947915581"
     token="-2935114193153270008"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="291" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="12" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1" />
-
-    <artifact
-        location="/home/abhishek/tensorflow/tensorflow/examples/android/gradleBuild/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/abhishek/tensorflow/tensorflow/examples/android/gradleBuild/outputs/apk/debug/android-debug.apk"
-        type="SPLIT_MAIN" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1507739576140"
+        timestamp="1508947431722"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/abhishek/tensorflow/tensorflow/examples/android/gradleBuild/intermediates/split-apk/debug/slices/slice_6.apk"
@@ -74,24 +66,7 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1507739940578"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/abhishek/tensorflow/tensorflow/examples/android/gradleBuild/outputs/apk/debug/android-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1507740404761"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/abhishek/tensorflow/tensorflow/examples/android/gradleBuild/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/abhishek/tensorflow/tensorflow/examples/android/gradleBuild/outputs/apk/debug/android-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
+        timestamp="1508947915581"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

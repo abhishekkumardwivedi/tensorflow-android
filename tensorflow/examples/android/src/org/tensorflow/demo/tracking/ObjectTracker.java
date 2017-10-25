@@ -22,6 +22,8 @@ import android.graphics.Paint;
 import android.graphics.PointF;
 import android.graphics.RectF;
 import android.graphics.Typeface;
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -505,8 +507,10 @@ public class ObjectTracker {
 
       synchronized (ObjectTracker.this) {
         registerInitialAppearance(position, data);
+        Log.d("ObjectTracker", "registerInitialAppearance()");
         setPreviousPosition(position, timestamp);
         trackedObjects.put(id, this);
+        Log.d("ObjectTracker", "trackedObjects()");
       }
     }
 
@@ -517,6 +521,8 @@ public class ObjectTracker {
         isDead = true;
         forgetNative(id);
         trackedObjects.remove(id);
+        Log.d("ObjectTracker", "stopTracking()");
+
       }
     }
 
@@ -568,6 +574,8 @@ public class ObjectTracker {
       final float[] delta = new float[4];
       getTrackedPositionNative(id, delta);
       lastTrackedPosition = new RectF(delta[0], delta[1], delta[2], delta[3]);
+
+   //   Log.d("ObjectTracker", "delta:[" + delta[0]+"|"+ delta[1]+"|"+ delta[2]+"|"+ delta[3]+"]");
 
       visibleInLastFrame = isObjectVisible(id);
     }
